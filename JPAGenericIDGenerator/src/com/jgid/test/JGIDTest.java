@@ -16,7 +16,7 @@ public class JGIDTest {
 		boolean flag = false;
 
 		try {
-			entityManagerFactory = EntityManagerRegistry.getOracleFactory();
+			entityManagerFactory = EntityManagerRegistry.getMySqlFactory();
 			entityManager = entityManagerFactory.createEntityManager();
 			transaction = entityManager.getTransaction();
 			transaction.begin();

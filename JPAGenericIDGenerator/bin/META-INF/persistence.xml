@@ -6,12 +6,12 @@
 	version="1.0">
 	<persistence-unit name="mysql">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.jig.entities.Bill</class>
+		<class>com.jgid.entities.PersonalDetails</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.cj.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/pepperfry" />
+				value="jdbc:mysql://localhost:3306/common" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
 				value="root123" />
@@ -24,7 +24,7 @@
 	
 	<persistence-unit name="oracle">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.jig.entities.Bill</class>
+		<class>com.jgid.entities.PersonalDetails</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
 				value="oracle.jdbc.driver.OracleDriver" />

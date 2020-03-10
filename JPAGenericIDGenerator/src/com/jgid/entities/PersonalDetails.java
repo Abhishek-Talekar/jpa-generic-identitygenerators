@@ -12,30 +12,30 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "presonal_details")
-public class PersonalDetails implements Serializable{
+public class PersonalDetails implements Serializable {
 	@Id
 	@Column(name = "aadhar_no")
 	@GeneratedValue(generator = "uuid")
 	@GenericGenerator(name = "uuid", strategy = "uuid")
-	protected long aadharNo;
-	
+	protected String aadharNo;
+
 	@Column(name = "name")
 	protected String name;
-	
+
 	@Column(name = "age")
 	protected int age;
-	
+
 	@Column(name = "blood_group")
 	protected String bloodGroup;
-	
+
 	@Column(name = "email_id")
 	protected String emailId;
 
-	public long getAadharNo() {
+	public String getAadharNo() {
 		return aadharNo;
 	}
 
-	public void setAadharNo(long aadharNo) {
+	public void setAadharNo(String aadharNo) {
 		this.aadharNo = aadharNo;
 	}
 
@@ -76,6 +76,5 @@ public class PersonalDetails implements Serializable{
 		return "PersonalDetails [aadharNo=" + aadharNo + ", name=" + name + ", age=" + age + ", bloodGroup="
 				+ bloodGroup + ", emailId=" + emailId + "]";
 	}
-	
-	
+
 }
